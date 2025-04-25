@@ -1,4 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Scraper</title>
+</head>
+<body>
+<h2>Web Scraper Form</h2>
 <form action="scrape" method="GET">
-  <input type="url" name="url" placeholder="Enter URL">
+  <label>Enter URL:</label>
+  <input type="url" name="url" placeholder="https://www.bbc.com" required><br><br>
+
+  <label><input type="checkbox" name="option" value="title"> Title</label><br>
+  <label><input type="checkbox" name="option" value="headings"> Headings</label><br>
+  <label><input type="checkbox" name="option" value="links"> Links</label><br>
+  <label><input type="checkbox" name="option" value="images"> Images</label><br><br>
+
   <button type="submit">Scrape</button>
 </form>
+</body>
+</html>
